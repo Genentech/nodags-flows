@@ -1,13 +1,19 @@
-## NODAGs-Flow
+# NODAGs-Flow: Nonlinear Cyclic Causal Structure Learning
 
-The repository contains the codebase for NODAGs-Flow, a residual flow based model for learning nonlinear cyclic causal dependencies from interventional data. 
+This repository contains an implementation of the following paper:
+
+[1] Sethuraman MG., Lopez R., Mohan R., Fekri F., Biancalani T., and Hütter JC. (2023). [NODAGS-Flow: Nonlinear Cyclic Causal Structure Learning](https://arxiv.org/abs/2301.01849). [AISTATS'23](https://virtual.aistats.org/Conferences/2023)
 
 ## Installation
-In order to install the code, clone the repository and make sure that either `miniconda` or `anaconda` is installed. Additionally, the following packages are needed. 
+In order to install the code, clone the repository via the following command
+
+```
+git clone https://github.com/Genentech/nodags-flows.git
+```
+
+ Make sure that either `miniconda` or `anaconda` is installed. Additionally, the following packages are needed. 
 
 - [ ] Pytorch
 - [ ] Pytorch-lightning
 - [ ] Ax
 - [ ] networkx 
-
-To install the NOTEARs baseline, follow the instructions within `baselines/causal_discovery-master/install`
