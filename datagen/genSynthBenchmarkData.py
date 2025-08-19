@@ -39,6 +39,8 @@ def generate_config_data(n_nodes,
     data_path = os.path.join(data_output_path, "training_data/nodes_{}/graph_{}".format(n_nodes, g_id))
     dataset_gen.store_data(data_path, datasets, interventions=config['inter'])
 
+    # The SEM used to generate the validation data is not the same as the
+    # the SEM used to generate the training data. 
     for n_targets in [2, 3]:
         val_data_gen = Dataset(n_nodes=n_nodes,
                                         expected_density=1,
